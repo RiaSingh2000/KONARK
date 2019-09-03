@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey There!"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/orange_500"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:shadowColor="@color/overlay_dark_90" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please choose your language"
+        android:gravity="center"
+        android:textColor="@color/orange_400"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+   <!-- <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"></Spinner>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Confirm"
+       />-->
+
+    <Button
+        android:id="@+id/od"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="ODIA"
+        android:textColor="@color/overlay_light_90"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/en"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="ENGLISH"
+        android:textColor="@color/overlay_light_90"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="You can change your language preferences from Settings"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_40"/>
+
+</LinearLayout>

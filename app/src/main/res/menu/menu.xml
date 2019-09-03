@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        />
+    </group>
+
+    <item android:id="@+id/bookmark"
+        android:title="Bookmark"
+        android:icon="@drawable/bookmark"/>
+    <item
+        android:id="@+id/categories"
+        android:title="Categories"
+        android:icon="@drawable/categories"/>
+
+    <item
+        android:title="Home Categories"
+        android:id="@+id/home_categories" />
+
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:title="Instagram"
+                android:id="@+id/instagram"
+                android:icon="@drawable/instagram"
+                />
+
+            <item android:title="Facebook"
+                android:id="@+id/facebook"
+                android:icon="@drawable/facebook"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <item android:title="Messenger"
+                android:id="@+id/messenger"/>
+
+            <item android:title="Email"
+                android:id="@+id/email"
+                android:icon="@drawable/email"/>
+
+
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <item android:title="Terms and Conditions"
+                android:id="@+id/tAc"
+                />
+
+            <item android:title="Privacy Policy"
+                android:id="@+id/policy" />
+
+            <item
+                android:title="FAQ"
+                android:id="@+id/FAQ"
+                />
+
+            <item android:title="Share"
+                android:id="@+id/share"/>
+
+            <item
+                android:title="Rate App"
+                android:id="@+id/rate"
+                />
+
+            <item android:title="Settings"
+                android:id="@+id/settings"/>
+
+            <item
+                android:title="Exit"
+                android:id="@+id/exit"
+                />
+
+        </menu>
+    </item>
+
+
+</menu>
+
