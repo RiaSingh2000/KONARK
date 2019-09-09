@@ -18,13 +18,15 @@ import com.konarktimes.konark.R;
 
 import java.util.ArrayList;
 
-public class latestAdapter extends RecyclerView.Adapter<latestAdapter.latestAdapterViewHolder> {
+public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.latestAdapterViewHolder> {
     Context context;
     ArrayList<Posts> posts;
+    int size;
 
-    public latestAdapter(Context context, ArrayList<Posts> posts) {
+    public NewsAdapter(Context context, ArrayList<Posts> posts,int size) {
         this.context = context;
         this.posts = posts;
+        this.size=size;
     }
 
     @NonNull
@@ -61,7 +63,10 @@ public class latestAdapter extends RecyclerView.Adapter<latestAdapter.latestAdap
 
     @Override
     public int getItemCount() {
-        return posts.size();
+        if(posts.size()<=20||size==-1)
+         return posts.size();
+        else
+            return 20;
     }
 
     public class latestAdapterViewHolder extends RecyclerView.ViewHolder{

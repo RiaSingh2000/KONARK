@@ -18,13 +18,15 @@ import com.konarktimes.konark.R;
 
 import java.util.List;
 
-public class featureAdapter extends RecyclerView.Adapter<featureAdapter.featureAdapterViewHolder> {
+public class FeatureAdapter extends RecyclerView.Adapter<FeatureAdapter.featureAdapterViewHolder> {
     Context context;
     List<Posts> posts;
+    int size;
 
-    public featureAdapter(Context context, List<Posts> posts) {
+    public FeatureAdapter(Context context, List<Posts> posts,int size) {
         this.context = context;
         this.posts = posts;
+        this.size=size;
     }
 
     @NonNull
@@ -58,7 +60,7 @@ public class featureAdapter extends RecyclerView.Adapter<featureAdapter.featureA
 
     @Override
     public int getItemCount() {
-        if(posts.size()<=5)
+        if(posts.size()<=5||size==-1)
         return posts.size();
         else
             return 5;

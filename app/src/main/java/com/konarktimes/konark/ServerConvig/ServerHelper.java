@@ -16,6 +16,11 @@ public class ServerHelper {
     }
 
     public static  String getLangUrl(){return  "getLang.php";}
+
     public static  String getCategoryUrl(){return  "getCategories.php";}
+
+    public static  String getSearchResults(){return "getSearchResults.php";}
+
+    public static  String getCategoryWiseUrl(){return "getPostsByCategoryLanguage.php";}
 
 }
